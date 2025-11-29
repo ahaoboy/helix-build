@@ -45,6 +45,7 @@ jobs:
         uses: ahaoboy/cross-build@v1
         with:
           bin: "hx"
+          package: "helix-term"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           target: ${{ matrix.target }}
           tag: nightly
